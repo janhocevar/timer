@@ -1,0 +1,31 @@
+<ul class="form-label">
+  <li>
+    <label for="rounds">Number of rounds</label>
+    <input type="number" [(ngModel)]="numberOfRounds">
+  </li>
+
+  <li>
+    <label for="rounds">Round duration (minutes)</label>
+    <input type="number" [(ngModel)]="roundDuration">
+  </li>
+
+  <li>
+    <label for="rounds">Break duration (minutes)</label>
+    <input type="number" [(ngModel)]="breakDuration">
+  </li>
+</ul>
+
+<div class="actions-wrapper">
+  <button *ngIf="!trainingEnded" (click)="startTimer(roundDuration, true); trainingEnded = true">START</button>
+</div>
+
+<div class="current-status">
+  <p>
+    <span class="current-status__title">Status:</span>
+    <span>{{status}}, round: {{currentRound}}</span>
+  </p>
+</div>
+
+<div class="timer">
+  {{timerValue}}
+</div>

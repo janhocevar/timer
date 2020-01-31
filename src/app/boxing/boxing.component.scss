@@ -1,0 +1,48 @@
+:host {
+  align-self: flex-start;
+  padding-top: 50px;
+}
+
+input {
+  max-width: 80px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.actions-wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-status {
+  margin-top: 50px;
+  text-align: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.current-status__title {
+  margin-right: 5px;
+}
+
+.timer {
+  margin-top: 20px;
+  color: var(--red-1);
+  font-size: 140px;
+  text-align: center;
+  font-family: octin-college,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

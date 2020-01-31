@@ -1,0 +1,25 @@
+.link {
+  height: 80px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .03);
+  display: flex;
+  margin: 10px 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+  &:hover:not(.link-selected) {
+    background: var(--light-gray);
+    cursor: pointer;
+  }
+}
+
+.link-selected {
+  background: var(--red-1);
+  color: #FFF;
+}
+
+.empty-state {
+  font-size: 30px;
+}

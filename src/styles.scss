@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'reset.css';
+@import 'variables';
+@import 'forms';
+
+h1, h2 {
+  font-family: octin-sports,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, ul {
+  font-family: octin-college,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+header {
+  text-align: center;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
+}
+
+.page-wrapper {
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: flex-start;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+}
